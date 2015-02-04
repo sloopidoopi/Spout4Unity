@@ -9,5 +9,7 @@ This is a new repository based on the original <a href="https://github.com/benku
 The components now work in play&edit mode. You can enable/disable the spout components.
 
 Known issues: 
+
 If you enable/disable multiple Unity senders at the same time or in a short interval you can break the connection to the texture in an external Unity receiver. 
+
 If you change the Unity scene with the 'editor enabled' option it is possible to loose the connections to the external senders and receivers. (The plugin disable and enable itself on a scene change)
