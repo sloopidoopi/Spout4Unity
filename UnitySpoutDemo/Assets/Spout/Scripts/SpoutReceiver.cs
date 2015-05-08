@@ -141,9 +141,9 @@ namespace Spout{
 			set {
 				_texture = value;
 				if(_texture == null) _texture = Spout.nullTexture;
-				if(renderer != null)
+				if(GetComponent<Renderer>() != null)
 				{
-					renderer.sharedMaterial.mainTexture = _texture;
+					GetComponent<Renderer>().sharedMaterial.mainTexture = _texture;
 				}
 			}
 		}

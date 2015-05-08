@@ -187,8 +187,10 @@ extern "C" void EXPORT_API UnitySetGraphicsDevice (void* device, int deviceType,
 
 static IDirect3DDevice9* g_D3D9Device;
 //don't forget to cleanup these at the end !!!
+/*
 IDirect3D9Ex *			g_pDirect3D9Ex = NULL;
 IDirect3DDevice9Ex *	g_pDeviceD3D9ex = NULL;
+*/
 bool					is64bit = ( sizeof(int*) == 8 );
 
 static void SetGraphicsDeviceD3D9 (IDirect3DDevice9* device, GfxDeviceEventType eventType)

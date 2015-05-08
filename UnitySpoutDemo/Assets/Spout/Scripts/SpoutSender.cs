@@ -16,7 +16,6 @@ namespace Spout{
 
 		public string sharingName = "UnitySender";
 		public Texture texture;
-
 		public bool debugConsole = false;
 		
 		private bool senderIsCreated;
@@ -117,6 +116,7 @@ namespace Spout{
 			if(senderIsCreated)
 			{
 				Spout.instance.UpdateSender(sharingName,texture);
+				//Debug.Log("Update sender :"+updateSenderResult);
 			}
 			else
 			{
@@ -152,7 +152,10 @@ namespace Spout{
 
 			//Debug.Log("SpoutSender._CreateSender");
 
-			if(!senderIsCreated) senderIsCreated = Spout.instance.CreateSender(sharingName,texture);
+			if (!senderIsCreated) {
+					Debug.Log ("Sender is not created, creating one");
+					senderIsCreated = Spout.instance.CreateSender (sharingName, texture,1);
+			}
 
 			_attempts++;
 			if(_attempts > _createAttempts) Debug.LogWarning(String.Format("There are problems with creating the sender {0}. Please check your settings or restart Unity.",sharingName));

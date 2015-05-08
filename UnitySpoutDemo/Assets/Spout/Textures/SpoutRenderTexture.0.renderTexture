@@ -6,6 +6,9 @@ RenderTexture:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: SpoutRenderTexture.0
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
   m_Width: 1920
   m_Height: 1080
   m_AntiAliasing: 1

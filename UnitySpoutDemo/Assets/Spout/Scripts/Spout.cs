@@ -339,7 +339,7 @@ namespace Spout{
 			_instance.senderStoppedDelegate -= stoppedCallback;
 		}	
 
-		public  bool CreateSender(string sharingName, Texture tex)
+		public  bool CreateSender(string sharingName, Texture tex, int texFormat = 1)
 		{
 			if(!enabled)return false;
 			if(!_isInit)return false;
@@ -348,7 +348,7 @@ namespace Spout{
 			#endif
 			//Debug.Log("Spout.CreateSender");
 			Debug.Log("Spout.CreateSender:"+sharingName+"::"+tex.GetNativeTexturePtr().ToInt32());
-			bool result = createSenderNative(sharingName, tex.GetNativeTexturePtr());
+			bool result = createSenderNative(sharingName, tex.GetNativeTexturePtr(), texFormat);
 			if (!result) Debug.LogWarning (String.Format("Spout sender creation with name {0} failed !",sharingName));
 			if(result) {
 				//Debug.Log (String.Format("Spout sender creation with name {0} success !",sharingName));
@@ -391,7 +391,7 @@ namespace Spout{
 		
 		
 		[DllImport ("NativeSpoutPlugin", EntryPoint="createSender")]
-		private static extern bool createSenderNative (string sharingName, IntPtr texture);
+		private static extern bool createSenderNative (string sharingName, IntPtr texture, int texFormat);
 		
 		[DllImport ("NativeSpoutPlugin", EntryPoint="updateSender")]
 		private static extern bool updateSenderNative (string sharingName, IntPtr texture);

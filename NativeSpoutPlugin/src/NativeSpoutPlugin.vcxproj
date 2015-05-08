@@ -138,10 +138,8 @@ copy $(TargetPath) $(SolutionDir)\..\UnitySpoutDemo\Export\x64\ReceiverDemo_64bi
       <AdditionalDependencies>opengl32.lib;glu32.lib;winmm.lib;d3d9.lib;d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
-      <Command>copy $(TargetPath) $(SolutionDir)\..\UnitySpoutDemo\Assets\Plugins
-copy $(TargetPath) $(SolutionDir)\..\bin\x86
-copy $(TargetPath) $(SolutionDir)\..\UnitySpoutDemo\Export\x86\SenderDemo_32bit_Data\Plugins
-copy $(TargetPath) $(SolutionDir)\..\UnitySpoutDemo\Export\x86\ReceiverDemo_32bit_Data\Plugins</Command>
+      <Command>copy $(TargetPath) $(SolutionDir)\..\..\UnitySpoutDemo\Assets\Plugins\x86
+copy $(TargetPath) $(SolutionDir)\..\bin\x86</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -164,28 +162,26 @@ copy $(TargetPath) $(SolutionDir)\..\UnitySpoutDemo\Export\x86\ReceiverDemo_32bi
     </Link>
     <PostBuildEvent>
       <Command>copy $(TargetPath) $(SolutionDir)\..\bin\x64
-copy $(TargetPath) $(SolutionDir)\..\UnitySpoutDemo\Export\x64\SenderDemo_64bit_Data\Plugins
-copy $(TargetPath) $(SolutionDir)\..\UnitySpoutDemo\Export\x64\ReceiverDemo_64bit_Data\Plugins</Command>
+copy $(TargetPath) $(SolutionDir)\..\..\UnitySpoutDemo\Assets\Plugins\x86</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="SpoutHelpers.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="UnityPluginInterface.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutDirectX.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutGLDXinterop.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutGLextensions.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutMemoryShare.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutReceiver.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSDK.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSender.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSenderNames.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSharedMemory.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutDirectX.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutGLDXinterop.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutGLextensions.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutMemoryShare.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutReceiver.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSDK.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSender.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSenderNames.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSharedMemory.cpp" />
     <ClCompile Include="NativeSpoutPlugin.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
