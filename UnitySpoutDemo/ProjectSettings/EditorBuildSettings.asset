@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Spout/Scenes/Spout2 Sender.unity
   - enabled: 0
     path: Assets/Spout/Scenes/Spout2 Receiver.unity
@@ -13,5 +13,5 @@ EditorBuildSettings:
     path: Assets/Spout/Scenes/Spout2 Receiver.Quad.unity
   - enabled: 0
     path: Assets/Spout/Scenes/Spout2 Sender.and.Receiver.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Spout/Scenes/SimpleSender.unity

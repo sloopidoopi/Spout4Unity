@@ -285,18 +285,20 @@ extern "C" bool EXPORT_API createSender(char * senderName, void * texturePointer
 		HRESULT res = d3d11->CreateTexture2D(&desc, NULL,&sendingTexture);
 		printf("CreateTexture2D MANUAL TEST : [0x%x]\n", res);
 		*/
-
+		printf("texFormatIndex : %i\n",texFormatIndex);
 		DXGI_FORMAT texFormat = DXGI_FORMAT_R32G32B32A32_FLOAT;//DXGI_FORMAT_B8G8R8A8_UNORM;
 		switch(texFormatIndex)
 		{
-		case 0:
-			texFormat = DXGI_FORMAT_B8G8R8A8_UNORM;
-		case 1:
+		case 2:
 			texFormat = DXGI_FORMAT_R32G32B32A32_FLOAT;
 			break;
-		case 2:
-			texFormat = DXGI_FORMAT_R16G16B16A16_FLOAT;
+		case 24:
+			texFormat = DXGI_FORMAT_R10G10B10A2_UNORM;
 			break;
+		case 28:
+			texFormat = DXGI_FORMAT_R8G8B8A8_UNORM;
+			break;		           
+		
 		}
 
 		texResult = sdx->CreateSharedDX11Texture(g_D3D11Device,desc.Width,desc.Height,texFormat,&sendingTexture,sharedSendingHandle);
@@ -559,7 +561,7 @@ extern "C" void EXPORT_API checkReceivers()
 
 	int numSenders = sender->GetSenderCount();
 	
-	printf("Num senders :%i\n",numSenders);
+	//printf("Num senders :%i\n",numSenders);
 
 	if(numSenders != lastSendersCount)
 	{

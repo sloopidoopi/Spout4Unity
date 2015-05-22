@@ -145,6 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sharingName: UnitySender2
   texture: {fileID: 8400000, guid: d71b32dc32b71774d8c205c45625ece3, type: 2}
+  textureFormat: 28
   debugConsole: 0
 --- !u!114 &14016011
 MonoBehaviour:
@@ -302,6 +303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sharingName: UnitySender1
   texture: {fileID: 8400000, guid: c0ddb48c058a6134cab600767e999b69, type: 2}
+  textureFormat: 28
   debugConsole: 0
 --- !u!114 &416113423
 MonoBehaviour:
@@ -742,6 +744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sharingName: UnitySender0
   texture: {fileID: 8400000, guid: 5504d7accebb4dd4bacc50003544b246, type: 2}
+  textureFormat: 28
   debugConsole: 0
 --- !u!114 &1951239874
 MonoBehaviour:
