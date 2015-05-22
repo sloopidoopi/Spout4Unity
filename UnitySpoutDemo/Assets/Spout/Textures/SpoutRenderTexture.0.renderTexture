@@ -19,6 +19,6 @@ RenderTexture:
   m_SRGB: 0
   m_TextureSettings:
     m_FilterMode: 1
-    m_Aniso: 3
+    m_Aniso: 2
     m_MipBias: 0
     m_WrapMode: 1

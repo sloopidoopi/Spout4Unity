@@ -39,7 +39,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v100</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -128,7 +128,7 @@ copy $(TargetPath) $(SolutionDir)\..\UnitySpoutDemo\Export\x64\ReceiverDemo_64bi
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NATIVESPOUTPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\Documents\Ressources\SDKs\Spout2SDK\SpoutSDK\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Documents\Ressources\SDKs\Spout2SDK\SpoutSDK\Source;C:\Program Files %28x86%29\Spout\SPOUTSDK\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -151,7 +151,7 @@ copy $(TargetPath) $(SolutionDir)\..\bin\x86</Command>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;NATIVESPOUTPLUGIN_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\Documents\Ressources\SDKs\Spout2SDK\SpoutSDK\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Documents\Ressources\SDKs\Spout2SDK\SpoutSDK\Source;C:\Program Files %28x86%29\Spout\SPOUTSDK\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -162,7 +162,7 @@ copy $(TargetPath) $(SolutionDir)\..\bin\x86</Command>
     </Link>
     <PostBuildEvent>
       <Command>copy $(TargetPath) $(SolutionDir)\..\bin\x64
-copy $(TargetPath) $(SolutionDir)\..\..\UnitySpoutDemo\Assets\Plugins\x86</Command>
+copy $(TargetPath) $(SolutionDir)\..\..\UnitySpoutDemo\Assets\Plugins\x64</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -173,15 +173,15 @@ copy $(TargetPath) $(SolutionDir)\..\..\UnitySpoutDemo\Assets\Plugins\x86</Comma
     <ClInclude Include="UnityPluginInterface.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutDirectX.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutGLDXinterop.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutGLextensions.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutMemoryShare.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutReceiver.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSDK.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSender.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSenderNames.cpp" />
-    <ClCompile Include="..\..\..\..\..\..\Ressources\SDKs\Spout2SDK\SpoutSDK\Source\SpoutSharedMemory.cpp" />
+    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutDirectX.cpp" />
+    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutGLDXinterop.cpp" />
+    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutGLextensions.cpp" />
+    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutMemoryShare.cpp" />
+    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutReceiver.cpp" />
+    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutSDK.cpp" />
+    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutSender.cpp" />
+    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutSenderNames.cpp" />
+    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutSharedMemory.cpp" />
     <ClCompile Include="NativeSpoutPlugin.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -16,6 +16,7 @@ PlayerSettings:
   cloudProjectId: 
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
+  m_ShowUnitySplashScreen: 0
   defaultScreenWidth: 640
   defaultScreenHeight: 360
   defaultScreenWidthWeb: 600
@@ -111,13 +112,14 @@ PlayerSettings:
   iPadHighResPortraitSplashScreen: {fileID: 0}
   iPadLandscapeSplashScreen: {fileID: 0}
   iPadHighResLandscapeSplashScreen: {fileID: 0}
-  iOSCustomLaunchScreenType: 0
+  iOSLaunchScreenType: 0
   iOSLaunchScreenPortrait: {fileID: 0}
   iOSLaunchScreenLandscape: {fileID: 0}
   iOSLaunchScreenBackgroundColor:
     serializedVersion: 2
     rgba: 0
   iOSLaunchScreenFillPct: 1
+  iOSLaunchScreenSize: 100
   iOSLaunchScreenCustomXibPath: 
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
@@ -130,6 +132,7 @@ PlayerSettings:
   - width: 320
     height: 180
     banner: {fileID: 0}
+  androidGamepadSupportLevel: 0
   resolutionDialogBanner: {fileID: 0}
   m_BuildTargetIcons:
   - m_BuildTarget: 
