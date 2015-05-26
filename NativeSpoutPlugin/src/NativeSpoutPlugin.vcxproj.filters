@@ -29,31 +29,31 @@
     <ClCompile Include="NativeSpoutPlugin.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutDirectX.cpp">
+    <ClCompile Include="C:\Program Files (x86)\Spout2\SPOUTSDK\Source\SpoutDirectX.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutGLDXinterop.cpp">
+    <ClCompile Include="C:\Program Files (x86)\Spout2\SPOUTSDK\Source\SpoutGLDXinterop.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutGLextensions.cpp">
+    <ClCompile Include="C:\Program Files (x86)\Spout2\SPOUTSDK\Source\SpoutGLextensions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutMemoryShare.cpp">
+    <ClCompile Include="C:\Program Files (x86)\Spout2\SPOUTSDK\Source\SpoutMemoryShare.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutReceiver.cpp">
+    <ClCompile Include="C:\Program Files (x86)\Spout2\SPOUTSDK\Source\SpoutReceiver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutSDK.cpp">
+    <ClCompile Include="C:\Program Files (x86)\Spout2\SPOUTSDK\Source\SpoutSDK.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutSender.cpp">
+    <ClCompile Include="C:\Program Files (x86)\Spout2\SPOUTSDK\Source\SpoutSender.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutSenderNames.cpp">
+    <ClCompile Include="C:\Program Files (x86)\Spout2\SPOUTSDK\Source\SpoutSenderNames.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Program Files (x86)\Spout\SPOUTSDK\Source\SpoutSharedMemory.cpp">
+    <ClCompile Include="C:\Program Files (x86)\Spout2\SPOUTSDK\Source\SpoutSharedMemory.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

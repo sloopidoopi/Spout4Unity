@@ -103,12 +103,12 @@ GameObject:
   - 114: {fileID: 14016009}
   - 114: {fileID: 14016015}
   m_Layer: 0
-  m_Name: Spout Render Cam.2
+  m_Name: SpoutSender.Render Cam.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &14016008
 Transform:
   m_ObjectHideFlags: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 14016007}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a2582b4147ea6e4ebf31586d3c7d730, type: 3}
   m_Name: 
@@ -225,7 +225,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: 1
-  m_TargetTexture: {fileID: 8400000, guid: 2e3397a5938e5bb4c9df5a6a8bca144c, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: d71b32dc32b71774d8c205c45625ece3, type: 2}
   m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
@@ -273,12 +273,12 @@ GameObject:
   - 114: {fileID: 416113421}
   - 114: {fileID: 416113428}
   m_Layer: 0
-  m_Name: Spout Render Cam.1
+  m_Name: SpoutSender.Render Cam.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &416113421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -296,7 +296,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 416113420}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6a2582b4147ea6e4ebf31586d3c7d730, type: 3}
   m_Name: 
@@ -383,7 +383,7 @@ Camera:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: 1
-  m_TargetTexture: {fileID: 8400000, guid: b990a725ed031984ba053d9b1e6b8509, type: 2}
+  m_TargetTexture: {fileID: 8400000, guid: c0ddb48c058a6134cab600767e999b69, type: 2}
   m_TargetDisplay: 0
   m_HDR: 0
   m_OcclusionCulling: 1
@@ -540,7 +540,7 @@ GameObject:
   - 23: {fileID: 1447805745}
   - 114: {fileID: 1447805744}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: Quad.SpoutReceiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846b026f9a6af4049ae8cbc3b560f976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sharingName: Spout Sender 32bit
+  _sharingName: Spout DX11 Sender
 --- !u!23 &1447805745
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -629,7 +629,7 @@ GameObject:
   - 114: {fileID: 1951239874}
   - 114: {fileID: 1951239875}
   m_Layer: 0
-  m_Name: Spout Render Cam.0
+  m_Name: SpoutSender.Render Cam.0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -879,13 +879,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2082303849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27acebc9ad1110f6d00074c88d76c639, type: 3}
+  m_Script: {fileID: 11500000, guid: ad5549cf9427cc54b9f81440e1b43610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2143950021}
-  distance: 3
-  xSpeed: 400
-  ySpeed: 200
+  distance: 5
+  xSpeed: 250
+  ySpeed: 120
   yMinLimit: -20
   yMaxLimit: 80
 --- !u!1 &2125115215

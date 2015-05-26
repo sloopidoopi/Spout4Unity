@@ -297,8 +297,10 @@ extern "C" bool EXPORT_API createSender(char * senderName, void * texturePointer
 			break;
 		case 28:
 			texFormat = DXGI_FORMAT_R8G8B8A8_UNORM;
-			break;		           
-		
+			break;	
+		case 87:
+			texFormat = DXGI_FORMAT_B8G8R8A8_UNORM;
+		break;
 		}
 
 		texResult = sdx->CreateSharedDX11Texture(g_D3D11Device,desc.Width,desc.Height,texFormat,&sendingTexture,sharedSendingHandle);

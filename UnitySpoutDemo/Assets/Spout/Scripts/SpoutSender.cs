@@ -15,7 +15,7 @@ namespace Spout{
 
         //according to dxgiformat.h :
         //tested with DXGI_FORMAT_R8G8B8A8_UNORM (ATI Card)
-        public enum TextureFormat {  DXGI_FORMAT_R32G32B32A32_FLOAT = 2, DXGI_FORMAT_R10G10B10A2_UNORM = 24, DXGI_FORMAT_R8G8B8A8_UNORM=28 }
+        public enum TextureFormat { DXGI_FORMAT_R32G32B32A32_FLOAT = 2, DXGI_FORMAT_R10G10B10A2_UNORM = 24, DXGI_FORMAT_R8G8B8A8_UNORM = 28, DXGI_FORMAT_B8G8R8A8_UNORM=87 }
 		public string sharingName = "UnitySender";
 		public Texture texture;
         public TextureFormat textureFormat = TextureFormat.DXGI_FORMAT_R8G8B8A8_UNORM;
@@ -162,7 +162,16 @@ namespace Spout{
 
 			_attempts++;
 			if(_attempts > _createAttempts) Debug.LogWarning(String.Format("There are problems with creating the sender {0}. Please check your settings or restart Unity.",sharingName));
-			
+
+            if (_cam != null)
+            {
+                if (_cam.targetTexture == null || _cam.targetTexture != texture)
+                {
+                    Debug.LogWarning("Your Camera has no Target Texture or the texture that the Spout Sender uses is different!");
+                    if (texture != null) _cam.targetTexture = (RenderTexture)texture;
+                }
+            }
+
 			Spout.instance.OnSenderStopped -= OnSenderStoppedDelegate;
 			Spout.instance.OnSenderStopped += OnSenderStoppedDelegate;
 

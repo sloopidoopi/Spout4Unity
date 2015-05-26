@@ -224,7 +224,7 @@ GameObject:
   - 23: {fileID: 1381896120}
   - 114: {fileID: 1381896119}
   m_Layer: 0
-  m_Name: Quad
+  m_Name: Quad.SpoutReceiver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
