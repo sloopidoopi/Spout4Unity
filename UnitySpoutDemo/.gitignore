@@ -11,13 +11,13 @@ desktop.ini
 
 # Unity #
 #########
-[Ll]ibrary
-[Tt]emp
+/[Ll]ibrary
+/[Tt]emp
 *.unityproj
 
 # Visual Studio #
 #################
-[Oo]bj
+/[Oo]bj
 *.sln
 *.csproj
 *.suo
