@@ -1,4 +1,33 @@
-/Library
-/Export
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
 
+# Unity #
+#########
+/[Ll]ibrary
+/[Tt]emp
+*.unityproj
+
+# Visual Studio #
+#################
+/[Oo]bj
+*.sln
+*.csproj
+*.suo
+*.userprefs
+*.pidb
+*.DotSettings
+*.DotSettings.user
+*.vs
+
+# Other #
+#########
+/Export
 /Built
