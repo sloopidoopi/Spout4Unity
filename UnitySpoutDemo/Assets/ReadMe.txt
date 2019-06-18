@@ -29,6 +29,10 @@ DX9(Normal Unity rendering mode): Should work with all modes
 DX11: DXGI_FORMAT_R8G8B8A8_UNORM
 
 
+If you use the Unity PostProcessing stack you have to ensure that the "Invert Camera" script is below the PostProcessLayer Component in the Component inspector of your SpoutSender.(Otherwise the postprocessing scripts will override some camera settings and the script doesn't work as expected)
+https://github.com/Unity-Technologies/PostProcessing/issues/546
+
+
 
 
 

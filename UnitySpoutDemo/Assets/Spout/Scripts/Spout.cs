@@ -1,7 +1,7 @@
 ﻿/* 
  * Spout4Unity
 * Copyright © 2014-2015 Benjamin Kuperberg
-* Copyright © 2015 Stefan Schlupek
+* Copyright © 2015-2019 Stefan Schlupek
 * All rights reserved
 */
 using UnityEngine;
@@ -66,10 +66,12 @@ namespace Spout{
 		#pragma warning disable 414
 		[SerializeField]
 		private static bool _isInit;
-		[SerializeField]
+#pragma warning disable 649
+        [SerializeField]
 		private bool _isEnabledInEditor;
-		#pragma warning restore 414
-		private static bool isReceiving;
+#pragma warning restore 649
+#pragma warning restore 414
+        private static bool isReceiving;
 		
 		private  List<TextureInfo> newSenders;
 		private  List<TextureInfo> stoppedSenders;
@@ -104,8 +106,10 @@ namespace Spout{
 						GameObject _go = new GameObject("Spout");			
 						_instance = _go.AddComponent<Spout>();
 					}
+                    if (Application.isPlaying) { 
 					DontDestroyOnLoad(_instance.gameObject);
-				}
+                    }
+                }
 				
 				return _instance;
 			}

@@ -7,24 +7,50 @@ namespace Spout{
 	[RequireComponent (typeof(Camera))]
 	[ExecuteInEditMode]
 	public class InvertCamera : MonoBehaviour {
-		//public Camera camera;
-		void Start () {
+        //public Camera camera;
+        
+        protected bool invertCulling = true;
+        protected Camera m_cam;
+        private void Awake()
+        {
+            m_cam = GetComponent<Camera>();
+        }
+        void Start () {
 			//camera = get
 		}
-		
-		void OnPreCull () {
-			GetComponent<Camera>().ResetWorldToCameraMatrix();
-			GetComponent<Camera>().ResetProjectionMatrix();
-			GetComponent<Camera>().projectionMatrix = GetComponent<Camera>().projectionMatrix * Matrix4x4.Scale(new Vector3(1, -1, 1));
+        private void OnEnable()
+        {
+            m_cam = GetComponent<Camera>();
+        }
+        private void OnDisable()
+        {
+            if (m_cam == null) return;
+            m_cam.ResetWorldToCameraMatrix();
+            m_cam.ResetProjectionMatrix();
+        }
+
+        void OnPreCull () {
+            //return;
+            if (m_cam == null || !enabled) return;
+            m_cam.ResetWorldToCameraMatrix();
+            m_cam.ResetProjectionMatrix();
+            m_cam.projectionMatrix = m_cam.projectionMatrix * Matrix4x4.Scale(new Vector3(1, -1, 1));
 		}
 		
 		void OnPreRender () {
-			GL.SetRevertBackfacing(true);
-		}
+          
+            if (enabled)
+            {
+                if (invertCulling) GL.invertCulling = true;
+            }
+           
+        }
 		
 		void OnPostRender () {
-			GL.SetRevertBackfacing(false);
-		}
+                     
+                GL.invertCulling = false;
+           
+        }
 		
 	}
 
